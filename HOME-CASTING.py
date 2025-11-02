@@ -211,6 +211,61 @@ Z = bytearray(10)
 print(Z)
 
 #Memory view bytes with casting
+ab = memoryview(bytes(10))
+print(ab)
+bc = memoryview(bytes(5))
+print(type(bc),bc)
 
+#None
 
+cd = None
+print(cd)
 
+#python numbers
+#int
+de = 1
+ef = 123729837239827
+fg = -1273847387
+print(type(de),type(ef),type(fg), de,ef,fg)
+
+#float
+gh = 76.23432
+hi =-126.232
+ij = 12E4
+jk = 35e3
+kl = -87.e62362
+print(type(gh),type(hi),type(ij), type(jk), type(kl), gh, hi, ij, jk, kl)
+
+#complex
+lm = -1j
+mn = 1 + 6j
+no = -8j
+print(type(lm),type(mn),type(no),lm,mn,no)
+
+import random
+print(random.randrange(1, 10))
+
+# Casting in python
+#int
+pq = int(2.5)
+qr = int(12.6)
+rs = int("1")
+print(pq,qr,rs)
+print(type(pq), type(qr), type(rs))
+
+#float
+st = float(1)
+tu = float(56)
+uv = float(8)
+vw = float("3")
+wx = float("4.2")
+print(st,tu,uv,vw,wx)
+print(type(st),type(tu),type(uv),type(vw),type(wx))
+
+#Strings
+
+xy = str(1) 
+yz = str(3.0)
+AB = str("s1")
+print(xy,yz,AB)
+print(type(xy),type(yz),type(AB))
