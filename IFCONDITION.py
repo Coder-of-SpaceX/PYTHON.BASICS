@@ -120,25 +120,179 @@ else:
     print("Error : Dear Mam/Sir Username cannot be empty")
     
 # Normal syntax for shorthand if
-# One line if statement 
-i = 5
-j = 2
-if i > j: print(f"{i} is greater")
+# One line 'if statement' 
+i = 50
+j = 100
+if i < j: print(f"{j} is greater")
 
-# Short hand if...else
-k = 50
-l = 100
-print(f"{k} is greater than {l}") if k > l else print(f"{l} is greater than {k}")
+# Shorthand if.....else
+k = 100
+l = 200
+print(f"{k} is smaller") if k < l else print(f"{l} is smaller")
 
-# Assing a value with if else
-m = 100
+# Assign a value with if else
+m = 10
 n = 50
-Elder =  m if m > n else n
-print("Elder is...",Elder)
-# Note you can't use print statement in this.
+high_value = m if m > n else n
+print(high_value)
 
-# Multiple conditions on one line
-o = 100
-p = 100
-print(f"{0} is greater than {p}") if o > p else print(f"Both {o} & {p} are equal to each other") if o == p else print(f"{p} is greater than {o}")
+# Mulitple coniditions on one line 
+o = 200
+p = 200
+print (o) if o > p else print(p) if o < p else print(f"Both {o} & {p} are equal")
 
+# Ternary operators are basically useful when simple assignments and return statements
+q = 15
+r = 20
+max_value =  q if q < r else r
+print(max_value)
+
+#Setting a default value 
+username = ""
+print(username) if username else print("Guest User")
+
+# Logical operators
+s = 100
+t = 200
+
+if s < t and t > s :
+    print("Yes T is greater and both the conidtions are correct due to which this code runned")
+else:
+    print("No its not meeting the condition as well as any one condition is wrong")
+
+u = 100 
+v = 200
+w = 200
+if u > v or v == w:
+    print(True)
+else:
+    print(False)
+
+x = 100 
+y = 200
+if not x > y:
+    print(True)
+else:
+    print(False)
+
+# combining mulitple operators
+aging = 25
+is_student = False
+has_discount_code = True
+if age > 0 or age < 65 and not is_student or has_discount_code :
+    print("Discount available..")
+
+temp = 25
+is_raining = False
+is_weekend = True
+if temp > 20 and not is_raining or is_weekend:
+    print("Best time for adventure trip")
+
+uname = "RadhaKrishna"
+passwd = "admin@123"
+is_verified = True
+if uname and passwd and is_verified:
+    print(f"Welcome {uname} You logged in successfully")
+else:
+    print("User not verified and login unsucessfull")
+
+# Range checking with logical operators
+score = 80
+if score > 0 and score < 100:
+    print("Valid score")
+else:
+    print("Invalid score")
+
+# Normal syntax of if statement in nested if 
+z = 40
+if z > 10:
+    print("Number is above 10")
+    if z > 20:
+        print("Number is above 20")
+
+years_old = 25
+license_available = True
+if years_old >= 18:
+    print("Age is valid")
+    if license_available:
+        print("Yes you can drive")
+    else:
+        print("You are not eligible to drive without license")
+else:
+    print("Legal age of driving is 18 and you are still younger than that")    
+
+
+result = 80
+attendance = 90
+assignment_submit = True
+if result >= 60:
+    print("Status : PASS")
+    if attendance >= 80:
+        print("Passed With Good attendance")
+        if assignment_submit:
+            print("Passed with perfect Assignment submition")
+        else:
+            print("passed but assignment not submitted")
+    else:
+        print("Passed but neeed to improve you attendance")
+else:
+    print("You are failed work hard next time")
+
+weather_forcast = 25
+is_sunny = True
+
+if weather_forcast > 20:
+    if is_sunny:
+        print("Perfect beach Vibes!!!")
+
+Username = "RadhaKrishna"
+password = "admin@123"
+is_active = True
+if Username:
+    if password:
+        if is_active:
+            print("Login Successfull")
+        else:
+            print("Login Unsuccessfull, user is inactive")
+    else:
+        print("Password Required")
+else:
+    print("Username Required")
+
+goal = 92
+credit = 5
+if goal >= 90:
+    if credit:
+        print("A + Grade")
+    else:
+        print("A Grade")
+elif goal >= 80:
+    print("B Grade")
+else:
+    print("C GRADE OR BELOW")
+
+# Normal syntax of if pass statement
+
+# The pass statement is useful in several situations:
+# When you're creating code structure but haven't implemented the logic yet
+# When a statement is required syntactically but no action is needed
+# As a placeholder for future code during development
+# In empty functions or classes that you plan to implement later
+
+AB = 10
+BC = 20
+if AB < BC:
+    pass
+
+numeric = 2
+if numeric % 2 == 0:
+    pass
+else:
+    print("odd")
+
+target = 80
+if target > 60:
+    pass
+    print("Target Proccessed")
+
+# if condition completed now initiate the practise for the same......
