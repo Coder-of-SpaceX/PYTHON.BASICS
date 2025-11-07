@@ -178,3 +178,4 @@ if len(user_input) == 0:
 else:
     print(f"You entered: {user_input}")
 
+# Shorthand if practise 
